@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=MarketCash Wallet
+Comment=MarketCash wallet
+Exec=marketcashwallet %U
+Terminal=false
+Type=Application
+Icon=marketcash
+MimeType=x-scheme-handler/marketcash;
+Categories=Office;Finance;

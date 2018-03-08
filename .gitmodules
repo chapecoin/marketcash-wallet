@@ -1,0 +1,3 @@
+[submodule "marketcash"]
+	path = marketcash
+	url = https://github.com/MarketCashME/marketcash

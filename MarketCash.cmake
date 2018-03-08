@@ -1,0 +1,4 @@
+set(CN_PROJECT_NAME "MarketCashWallet")
+set(CN_CURRENCY_DISPLAY_NAME "MarketCash")
+set(CN_CURRENCY_TICKER "MKT")
+
