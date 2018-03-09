@@ -8,3 +8,5 @@ cd build
 "C:\Program Files (x86)\MSBuild\14.0\Bin\msbuild.exe" marketcash.vcxproj /p:Configuration=Release
 "C:\Program Files (x86)\MSBuild\14.0\Bin\msbuild.exe" ZERO_CHECK.vcxproj /p:Configuration=Release
 "C:\Program Files (x86)\MSBuild\14.0\Bin\msbuild.exe" MarketCashWallet.vcxproj /p:Configuration=Release
+
+"C:\Program Files (x86)\Inno Setup 5\Compil32.exe" /cc "..\innosetup\MarketCash_64bits.iss"
