@@ -79,6 +79,7 @@ Settings::Settings() : m_p2pBindPort(0), m_cmdLineParser(nullptr) {
   m_defaultPoolList << "mkt.ciapool.com:3333";
   m_defaultPoolList << "us-mkt.4miner.me:3334";
   m_defaultPoolList << "usw.electromine.net:6611";
+  m_defaultPoolList << "mktpool.moedasdigitais.nl:3330";
 
   Style* lightStyle = new LightStyle();
   Style* darkStyle = new DarkStyle();
