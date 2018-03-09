@@ -34,7 +34,14 @@ You can now run the MarketCash GUI. Make sure that marketcashd is running in a t
 
 # How to build for Windows
 
-Required Programs: ```Microsoft Visual Studio 2015``` ```Binary Boost 1_63_0 msvc14``` ```CMake 3.0.2 (minimum required)``` ```InnoDB - www.jrsoftware.org/download.php/is.exe```
+Required Programs: 
+```Microsoft Visual Studio 2015```
+
+```Binary Boost 1_63_0 msvc14```
+
+```CMake 3.0.2 (minimum required)```
+
+```InnoDB - www.jrsoftware.org/download.php/is.exe```
 
 ```If you download boost for 32bit run winbuild_32bits.bat```
 
