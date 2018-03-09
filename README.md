@@ -35,16 +35,13 @@ You can now run the MarketCash GUI. Make sure that marketcashd is running in a t
 # How to build for Windows
 
 Required Programs:
-
 Microsoft Visual Studio 2015
-
 Binary Boost 1_63_0 msvc14 (32bit for wallet 32bit or 64bit for wallet 64bit)
-
 CMake 3.0.2 (minimum required)
-
 InnoDB - www.jrsoftware.org/download.php/is.exe
 
 ```If you download boost for 32bit run winbuild_32bits.bat```
+
 ```If you download boost for 64bit run winbuild_64bits.bat```
 
 
