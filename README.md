@@ -42,6 +42,8 @@ Required Programs:
 
 ```CMake 3.0.2 (minimum required)```
 
+```Qt 5.10.0```
+
 ```InnoDB - www.jrsoftware.org/download.php/is.exe```
 
 ```If you download boost for 32bit run winbuild_32bits.bat```
