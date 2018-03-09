@@ -32,9 +32,10 @@ https://github.com/MarketCashME/marketcash-gui/releases
 
 You can now run the MarketCash GUI. Make sure that marketcashd is running in a terminal window else the GUI will crash on startup.
 
-# How to build for Windows
+# How to build for Windows 32/64 bits
 
-Required Programs: 
+Required Programs:
+
 ```Microsoft Visual Studio 2015```
 
 ```Binary Boost 1_63_0 msvc14```
