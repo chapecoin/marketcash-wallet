@@ -1,10 +1,10 @@
-# MarketCash GUI
+# MarketCash GUI Wallet
 
 Copyright (c) 2018, The MarketCash Developers.   
 Portions Copyright (c) 2012-2017, The CryptoNote Developers, The Bytecoin Developers.
 
 # Download Releases
-https://github.com/MarketCashME/marketcash-gui/releases
+https://github.com/MarketCashME/marketcash-wallet/releases
 
 
 # How to build for Ubuntu Linux
@@ -18,7 +18,7 @@ https://github.com/MarketCashME/marketcash-gui/releases
 
 ```git clone https://github.com/MarketCashME/marketcash-wallet.git```
 
-```cd marketcash-gui```
+```cd marketcash-wallet```
 
 ```git submodule add -f https://github.com/MarketCashME/marketcash.git```
 
