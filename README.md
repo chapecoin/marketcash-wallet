@@ -7,7 +7,7 @@ Portions Copyright (c) 2012-2017, The CryptoNote Developers, The Bytecoin Develo
 https://github.com/MarketCashME/marketcash-wallet/releases
 
 
-# How to build for Ubuntu Linux
+# How to build for Ubuntu/Linux
 
 ```sudo apt-get -y install build-essential libssl-dev libboost-all-dev```
 
@@ -22,7 +22,7 @@ https://github.com/MarketCashME/marketcash-wallet/releases
 
 ```git submodule add -f https://github.com/MarketCashME/marketcash.git```
 
-```cp CMakeLists_Ubuntu.txt CMakeLists.txt```
+```cp CMakeLists_Linux.txt CMakeLists.txt```
 
 ```mkdir build ; cd build```
 
