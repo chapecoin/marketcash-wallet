@@ -16,11 +16,11 @@ https://github.com/MarketCashME/marketcash-gui/releases
 ```sudo apt-get install qt5-default qttools5-dev-tools```
 
 
-```git clone https://github.com/selvahost/marketcash-wallet```
+```git clone https://github.com/MarketCashME/marketcash-wallet.git```
 
 ```cd marketcash-gui```
 
-```git submodule add -f https://github.com/selvahost/marketcash```
+```git submodule add -f https://github.com/MarketCashME/marketcash.git```
 
 ```mkdir build ; cd build```
 
