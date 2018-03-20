@@ -22,6 +22,8 @@ https://github.com/MarketCashME/marketcash-wallet/releases
 
 ```git submodule add -f https://github.com/MarketCashME/marketcash.git```
 
+```cp CMakeLists_Ubuntu.txt CMakeLists.txt```
+
 ```mkdir build ; cd build```
 
 ```cmake ..```
