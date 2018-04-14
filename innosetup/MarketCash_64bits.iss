@@ -4,7 +4,7 @@
 #define MyAppName "MarketCash"
 #define MyAppVersion "1.1"
 #define MyAppPublisher "MarketCash, Inc."
-#define MyAppURL "https://marketcash.com/"
+#define MyAppURL "https://marketcash.io/"
 #define MyAppExeName "MarketCashWallet.exe"
 
 [Setup]
