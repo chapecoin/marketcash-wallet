@@ -413,7 +413,7 @@ public:
         m_availableBalanceCopyLabel->setText(QApplication::translate("OverviewHeaderFrame", "Copied!", 0));
         m_lockedBalanceCopyLabel->setText(QApplication::translate("OverviewHeaderFrame", "Copied!", 0));
         m_totalBalanceCopyLabel->setText(QApplication::translate("OverviewHeaderFrame", "Copied!", 0));
-        label_3->setText(QApplication::translate("OverviewHeaderFrame", "Your", 0));
+        label_3->setText(QApplication::translate("OverviewHeaderFrame", "You", 0));
         m_overviewNetworkDifficultyLabel->setText(QApplication::translate("OverviewHeaderFrame", "TextLabel", 0));
         label_7->setText(QApplication::translate("OverviewHeaderFrame", "Difficulty", 0));
         m_overviewMiningIconLabel->setText(QString());

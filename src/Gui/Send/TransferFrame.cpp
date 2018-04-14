@@ -132,7 +132,7 @@ void TransferFrame::setAmountFormatError(bool _error) {
   m_ui->m_amountTextLabel->setProperty("errorState", _error);
   m_ui->m_sendAmountSpin->setProperty("errorState", _error);
   if (_error) {
-    m_ui->m_amountTextLabel->setText(tr("WRONG AMOUNT"));
+    m_ui->m_amountTextLabel->setText(tr("Insufficient Fee or Insufficient Balance"));
     connect(m_ui->m_sendAmountSpin, static_cast<void(QDoubleSpinBox::*)(double)>(&QDoubleSpinBox::valueChanged), this,
       &TransferFrame::validateAmount, Qt::UniqueConnection);
   } else {
@@ -172,7 +172,7 @@ void TransferFrame::setBigTransactionError(bool _error) {
   m_ui->m_amountTextLabel->setProperty("errorState", _error);
   m_ui->m_sendAmountSpin->setProperty("errorState", _error);
   if (_error) {
-    m_ui->m_amountTextLabel->setText(tr("TRANSACTION IS TOO BIG"));
+    m_ui->m_amountTextLabel->setText(tr("TRANSACTION SIZE IN BYTES IS TOO BIG"));
     connect(m_ui->m_sendAmountSpin, static_cast<void(QDoubleSpinBox::*)(double)>(&QDoubleSpinBox::valueChanged), this,
       &TransferFrame::validateAmount, Qt::UniqueConnection);
   } else {

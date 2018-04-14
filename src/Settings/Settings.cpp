@@ -58,12 +58,12 @@ const char OPTION_PRIVACY_PARAMS[] = "privacyParams";
 const char OPTION_PRIVACY_NEWS_ENABLED[] = "newsEnabled";
 
 const char DEFAULT_WALLET_FILE_NAME[] = "marketcashwallet.wallet";
-const quint64 DEFAULT_OPTIMIZATION_PERIOD = 1000 * 60 * 30; // 30 minutes
+const quint64 DEFAULT_OPTIMIZATION_PERIOD = 1000 * 60 * 5; // 5 minutes
 const quint64 DEFAULT_OPTIMIZATION_THRESHOLD = 10000000000;
 const quint64 DEFAULT_OPTIMIZATION_MIXIN = 0;
 
 const quint64 VERSION_MAJOR = 1;
-const quint64 VERSION_MINOR = 0;
+const quint64 VERSION_MINOR = 1;
 
 
 }
@@ -75,11 +75,11 @@ Settings& Settings::instance() {
 
 
 Settings::Settings() : m_p2pBindPort(0), m_cmdLineParser(nullptr) {
-  m_defaultPoolList << "mk.selvahost.us:3333";
+  m_defaultPoolList << "mkt.selvahost.us:3333";
   m_defaultPoolList << "mkt.ciapool.com:3333";
   m_defaultPoolList << "us-mkt.4miner.me:3334";
   m_defaultPoolList << "usw.electromine.net:6611";
-  m_defaultPoolList << "mktpool.moedasdigitais.nl:3330";
+  
 
   Style* lightStyle = new LightStyle();
   Style* darkStyle = new DarkStyle();
@@ -110,7 +110,18 @@ void Settings::init() {
       
   if (cfgFile.open(QIODevice::ReadOnly)) {
     m_settings = QJsonDocument::fromJson(cfgFile.readAll()).object();
+	
     cfgFile.close();
+  } else {
+      
+        QJsonObject optimizationObject;
+   optimizationObject.insert(OPTION_WALLET_OPTIMIZATION_ENABLED, true);
+   optimizationObject.insert(OPTION_WALLET_OPTIMIZATION_FUSION_TARNSACTIONS_IS_VISIBLE, true);
+    m_settings.insert(OPTION_NODE_REMOTE_RPC_URL, QString("66.70.149.80:32367"));
+    
+    m_settings.insert(OPTION_WALLET_OPTIMIZATION, optimizationObject);
+    
+    
   }
 
   restoreDefaultPoolList();
