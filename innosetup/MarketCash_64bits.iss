@@ -2,16 +2,16 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "MarketCash"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1"
 #define MyAppPublisher "MarketCash, Inc."
-#define MyAppURL "http://marketcash.com/"
+#define MyAppURL "https://marketcash.com/"
 #define MyAppExeName "MarketCashWallet.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{AC90168B-EFB2-4DC1-AA09-78F11A134376}
+AppId={{FF634B01-FFF6-4082-AD56-D53AF4163392}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
