@@ -78,9 +78,12 @@ Settings::Settings() : m_p2pBindPort(0), m_cmdLineParser(nullptr) {
   m_defaultPoolList << "mkt.selvahost.us:3333";
   m_defaultPoolList << "mkt.ciapool.com:3333";
   m_defaultPoolList << "us-mkt.4miner.me:3334";
-  m_defaultPoolList << "usw.electromine.net:6611";
+  m_defaultPoolList << "mkt.mining-pool.pw:3333";
+  m_defaultPoolList << "fastpool.pw:19100";
+  m_defaultPoolList << "mkt.ozminers.club:1111";
+  m_defaultPoolList << "mkt.hashpool.frl:10333";
   
-
+  
   Style* lightStyle = new LightStyle();
   Style* darkStyle = new DarkStyle();
   m_styles.insert(lightStyle->getStyleId(), lightStyle);
@@ -104,7 +107,7 @@ void Settings::setCommandLineParser(CommandLineParser* _cmdLineParser) {
 }
 
 void Settings::init() {
-  QFile cfgFile(getDataDir().absoluteFilePath("marketcashwallet.cfg"));
+  QFile cfgFile(getDataDir().absoluteFilePath("wallet.cfg"));
   
 
       
@@ -117,7 +120,7 @@ void Settings::init() {
         QJsonObject optimizationObject;
    optimizationObject.insert(OPTION_WALLET_OPTIMIZATION_ENABLED, true);
    optimizationObject.insert(OPTION_WALLET_OPTIMIZATION_FUSION_TARNSACTIONS_IS_VISIBLE, true);
-    m_settings.insert(OPTION_NODE_REMOTE_RPC_URL, QString("66.70.149.80:32367"));
+    m_settings.insert(OPTION_NODE_REMOTE_RPC_URL, QString("66.70.149.80:32267"));
     
     m_settings.insert(OPTION_WALLET_OPTIMIZATION, optimizationObject);
     
@@ -956,7 +959,7 @@ void Settings::setUrlHandler() {
 #endif
 
 void Settings::saveSettings() const {
-  QFile cfgFile(QDir(m_cmdLineParser->getDataDir()).absoluteFilePath("marketcashwallet.cfg"));
+  QFile cfgFile(QDir(m_cmdLineParser->getDataDir()).absoluteFilePath("wallet.cfg"));
   if (cfgFile.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
     QJsonDocument cfg_doc(m_settings);
     cfgFile.write(cfg_doc.toJson());

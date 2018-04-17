@@ -2,9 +2,9 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "MarketCash"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1"
 #define MyAppPublisher "MarketCash, Inc."
-#define MyAppURL "http://marketcash.com/"
+#define MyAppURL "https://marketcash.io/"
 #define MyAppExeName "MarketCashWallet.exe"
 
 [Setup]
@@ -61,11 +61,11 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Source: "..\build\Release\MarketCashWallet.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\build\Release\MarketCashWallet.exp"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\build\Release\MarketCashWallet.lib"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Qt\Qt5.10.0\5.10.0\msvc2015\bin\Qt5Gui.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Qt\Qt5.10.0\5.10.0\msvc2015\bin\Qt5Network.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Qt\Qt5.10.0\5.10.0\msvc2015\bin\Qt5Widgets.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Qt\Qt5.10.0\5.10.0\msvc2015\bin\Qt5Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Qt\Qt5.10.0\5.10.0\msvc2015\plugins\platforms\*.dll"; DestDir: "{app}\platforms"; Flags: ignoreversion
+Source: "C:\Qt\5.10.1\msvc2015\bin\Qt5Gui.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Qt\5.10.1\msvc2015\bin\Qt5Network.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Qt\5.10.1\msvc2015\bin\Qt5Widgets.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Qt\5.10.1\msvc2015\bin\Qt5Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Qt\5.10.1\msvc2015\plugins\platforms\*.dll"; DestDir: "{app}\platforms"; Flags: ignoreversion
 
 [Icons]
 Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
