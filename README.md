@@ -44,7 +44,7 @@ Required Programs:
 
 ```CMake 3.0.2 (minimum required)```
 
-```Qt 5.10.0```
+```Qt 5.10.1```
 
 ```InnoDB - www.jrsoftware.org/download.php/is.exe```
 
