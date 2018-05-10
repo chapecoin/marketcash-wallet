@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "MarketCash"
-#define MyAppVersion "1.1"
+#define MyAppVersion "1.2"
 #define MyAppPublisher "MarketCash, Inc."
 #define MyAppURL "https://marketcash.io/"
 #define MyAppExeName "MarketCashWallet.exe"
