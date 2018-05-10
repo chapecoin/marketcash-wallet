@@ -63,7 +63,7 @@ const quint64 DEFAULT_OPTIMIZATION_THRESHOLD = 10000000000;
 const quint64 DEFAULT_OPTIMIZATION_MIXIN = 0;
 
 const quint64 VERSION_MAJOR = 1;
-const quint64 VERSION_MINOR = 1;
+const quint64 VERSION_MINOR = 2;
 
 
 }
@@ -82,6 +82,10 @@ Settings::Settings() : m_p2pBindPort(0), m_cmdLineParser(nullptr) {
   m_defaultPoolList << "fastpool.pw:19100";
   m_defaultPoolList << "mkt.ozminers.club:1111";
   m_defaultPoolList << "mkt.hashpool.frl:10333";
+  m_defaultPoolList << "mkt.mineallcrypto.com:7636";
+  m_defaultPoolList << "miningpool365.com:8221";
+  m_defaultPoolList << "pool.mkt.easyhash.pro:7996";
+ 
   
   
   Style* lightStyle = new LightStyle();
