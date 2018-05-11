@@ -76,7 +76,6 @@ file(GLOB_RECURSE CRYPTONOTE_SOURCES
   marketcash/src/Common/StringView.cpp
   marketcash/src/Common/VectorOutputStream.cpp
   marketcash/src/Common/ScopeExit.cpp
-  marketcash/src/ConnectivityTool/ConnectivityTool.cpp
   marketcash/src/crypto/blake256.c
   marketcash/src/crypto/chacha8.c
   marketcash/src/crypto/crypto-ops-data.c
