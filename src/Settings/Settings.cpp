@@ -76,7 +76,7 @@ Settings& Settings::instance() {
 
 Settings::Settings() : m_p2pBindPort(0), m_cmdLineParser(nullptr) {
   m_defaultPoolList << "mkt.selvahost.us:3333";
-  m_defaultPoolList << "mkt.ciapool.com:3333";
+  m_defaultPoolList << "mkt-eu.ciapool.com:3333";
   m_defaultPoolList << "us-mkt.4miner.me:3334";
   m_defaultPoolList << "mkt.mining-pool.pw:3333";
   m_defaultPoolList << "fastpool.pw:19100";
