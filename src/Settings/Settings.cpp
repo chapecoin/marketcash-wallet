@@ -75,16 +75,9 @@ Settings& Settings::instance() {
 
 
 Settings::Settings() : m_p2pBindPort(0), m_cmdLineParser(nullptr) {
-  m_defaultPoolList << "mkt.selvahost.us:3333";
   m_defaultPoolList << "mkt-eu.ciapool.com:3333";
   m_defaultPoolList << "us-mkt.4miner.me:3334";
-  m_defaultPoolList << "mkt.mining-pool.pw:3333";
-  m_defaultPoolList << "fastpool.pw:19100";
-  m_defaultPoolList << "mkt.ozminers.club:1111";
-  m_defaultPoolList << "mkt.hashpool.frl:10333";
-  m_defaultPoolList << "mkt.mineallcrypto.com:7636";
-  m_defaultPoolList << "miningpool365.com:8221";
-  m_defaultPoolList << "pool.mkt.easyhash.pro:7996";
+  m_defaultPoolList << "mkt.my-mining-pool.de:13333";
  
   
   
