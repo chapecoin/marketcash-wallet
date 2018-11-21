@@ -63,7 +63,7 @@ const quint64 DEFAULT_OPTIMIZATION_THRESHOLD = 10000000000;
 const quint64 DEFAULT_OPTIMIZATION_MIXIN = 0;
 
 const quint64 VERSION_MAJOR = 1;
-const quint64 VERSION_MINOR = 2;
+const quint64 VERSION_MINOR = 3;
 
 
 }
@@ -78,6 +78,7 @@ Settings::Settings() : m_p2pBindPort(0), m_cmdLineParser(nullptr) {
   m_defaultPoolList << "mkt-eu.ciapool.com:3333";
   m_defaultPoolList << "us-mkt.4miner.me:3334";
   m_defaultPoolList << "mkt.my-mining-pool.de:13333";
+  m_defaultPoolList << "miner.codenoobs.com.br:3333";
  
   
   
