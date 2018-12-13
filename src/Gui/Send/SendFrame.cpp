@@ -65,7 +65,7 @@ const quint64 MAXIMUM_UNSYNCED_BLOCKS_WHEN_SEND_AVAILABLE = 5;
 const quint64 DEFAULT_MIXIN_VALUE = 0;
 const quint64 MAX_MIXIN_VALUE = 10;
 const quint64 CRITICAL_MIXIN_BOUND = 0;
-const quint64 NORMAL_MIXIN_BOUND = 6;
+const quint64 NORMAL_MIXIN_BOUND = 2;
 const char PAYMENT_URL_AMOUNT_TAG[] = "amount";
 const char PAYMENT_URL_PAYMENT_ID_TAG[] = "payment_id";
 const char PAYMENT_URL_MESSAGE_TAG[] = "message";
@@ -194,10 +194,10 @@ void SendFrame::passwordChanged() {
 }
 
 void SendFrame::synchronizationProgressUpdated(quint32 _current, quint32 _total) {
-  /*if (_total - _current > MAXIMUM_UNSYNCED_BLOCKS_WHEN_SEND_AVAILABLE) {
+  if (_total - _current > MAXIMUM_UNSYNCED_BLOCKS_WHEN_SEND_AVAILABLE) {
     m_glassFrame->install(this);
     m_glassFrame->updateSynchronizationState(_current, _total);
-  }*/
+  }
   
 }
 

@@ -63,7 +63,7 @@ const quint64 DEFAULT_OPTIMIZATION_THRESHOLD = 10000000000;
 const quint64 DEFAULT_OPTIMIZATION_MIXIN = 0;
 
 const quint64 VERSION_MAJOR = 1;
-const quint64 VERSION_MINOR = 3;
+const quint64 VERSION_MINOR = 4;
 
 
 }
@@ -118,10 +118,12 @@ void Settings::init() {
         QJsonObject optimizationObject;
    optimizationObject.insert(OPTION_WALLET_OPTIMIZATION_ENABLED, true);
    optimizationObject.insert(OPTION_WALLET_OPTIMIZATION_FUSION_TARNSACTIONS_IS_VISIBLE, true);
-    m_settings.insert(OPTION_NODE_REMOTE_RPC_URL, QString("66.70.149.80:32267"));
-    
+    //m_settings.insert(OPTION_NODE_REMOTE_RPC_URL, QString(""));
     m_settings.insert(OPTION_WALLET_OPTIMIZATION, optimizationObject);
-    
+	
+	QJsonObject privacyObject;
+	privacyObject.insert(OPTION_PRIVACY_NEWS_ENABLED, true);	
+	m_settings.insert(OPTION_PRIVACY_PARAMS, privacyObject);    
     
   }
 

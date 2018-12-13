@@ -54,7 +54,7 @@ namespace {
 
 const int MAX_RECENT_WALLET_COUNT = 10;
 const char COMMUNITY_FORUM_URL[] = "https://marketcash.io";
-const char REPORT_ISSUE_URL[] = "http://marketcash.io";
+const char REPORT_ISSUE_URL[] = "https://marketcash.io";
 
 const char DONATION_URL_DONATION_TAG[] = "donation";
 const char DONATION_URL_LABEL_TAG[] = "label";
