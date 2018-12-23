@@ -64,15 +64,15 @@ Open a Terminal and type:
 
 ```brew install cmake```
 
-Download a copy of the marketcash-gui source:
+Download a copy of the marketcash-wallet source:
 
 ```cd /opt```
 
 ```git clone https://github.com/MarketCashME/marketcash-wallet```
 
-Enter the marketcash-gui directory:
+Enter the marketcash-wallet directory:
 
-```cd marketcash-gui```
+```cd marketcash-wallet```
 
 Download the latest marketcash coin codebase:
 
